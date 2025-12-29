@@ -4,7 +4,7 @@ import requests
 app = Flask(__name__)
 
 JAMENDO_API_URL = "https://api.jamendo.com/v3.0/tracks"
-JAMENDO_API_KEY = "ab243d27"
+JAMENDO_API_KEY = ""
 
 @app.route('/')
 def index():
@@ -26,3 +26,4 @@ def search(query):
 
 if __name__ == '__main__':
     app.run(debug=True)
+
